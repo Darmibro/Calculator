@@ -8,6 +8,8 @@ static {
 	operations=new HashMap<>();
 	operations.put("+", (x,y)->x+y);
 	operations.put("-", (x,y)->x-y);
+	operations.put("*", (x,y)->x*y);
+	operations.put("/", (x,y)->x/y);
 }
 Set<String> getOperations(){
 	return operations.keySet();
